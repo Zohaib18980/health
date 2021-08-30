@@ -1,0 +1,61 @@
+
+@import '../../../assets/scss/variables';
+
+.quoteDetail {
+    border: 2px solid $lightBg;
+    border-radius: 15px;
+    .filterselected {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+        .filtertags {
+            .filtertag {
+                margin-right: 10px;
+                .taginner {
+                    padding: 8px;
+                    border-radius: 5px;
+                    background-color: $lightBg;
+                    font-size: 1rem;
+                    color: $textColor;
+                    img {
+                        margin-left: 5px;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
+        .reset {
+            a {
+                cursor: pointer;
+                font-size: 1rem;
+                color: $anchorColor;
+            }
+        }
+    }
+    .planpages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: $lightBg;
+        .pagelength {
+            display: flex;
+            font-size: 1rem;
+            color: $textColor;
+            align-items: center;
+            ng-select {
+                margin: 0 10px;
+            }
+        }
+        .pagesort {
+            display: flex;
+            font-size: 1rem;
+            color: $textColor;
+            align-items: center;
+            ng-select {
+                margin-left: 10px;
+            }
+        }
+    }
+}

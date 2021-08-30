@@ -1,0 +1,33 @@
+
+@import '../../../assets/scss/variables';
+
+.navbar {
+    box-shadow: none;
+    background-color: $whiteColor;
+    .navbar-collapse {
+        flex-grow: initial;
+    }
+}
+.top-flip {
+    display: flex;
+    padding: 8px 10px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        padding: 0 10px;
+        border-right: 1px solid #CDCDCD;
+        margin: 0;
+        color: $textColor;
+        &:nth-child(2) {
+            border: none;
+        }
+    }
+    .topQuote {
+        margin: 0 30px 0 100px;
+    }
+    .cross {
+        margin-right: 20px;
+    }
+}

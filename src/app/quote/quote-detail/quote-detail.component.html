@@ -1,0 +1,40 @@
+<div class="quoteDetail">
+    <div class="filterselected">
+        <div class="filtertags" *ngIf="isShown">
+            <span class="filtertag" *ngFor="let f of FilterName; let i = index">
+                <span class="taginner" *ngIf="tagShow==i">
+                    {{ f.filtername }}
+                    <img src="../../../assets/images/crosslight.png" alt="" width="11" (click)="tagClose(i)" />
+                </span>
+            </span>
+        </div>
+        <div class="reset">
+            <a (click)="tagsReset()">Rest All Filters</a>
+        </div>
+    </div>
+    <div class="planpages">
+        <div class="pagelength">
+            Show
+            <ng-select style="width: 80px;">
+                <ng-option>10</ng-option>
+                <ng-option>25</ng-option>
+                <ng-option>50</ng-option>
+            </ng-select>
+            plans
+        </div>
+        <div class="totalPlans">
+            143 plans found
+        </div>
+        <div class="pagesort">
+            Sort
+            <ng-select style="width: 120px;">
+                <ng-option>Newest</ng-option>
+                <ng-option>Oldest</ng-option>
+            </ng-select>
+            
+        </div>
+    </div>
+    <div class="plansDetail">
+        <app-plans></app-plans>
+    </div>
+</div>

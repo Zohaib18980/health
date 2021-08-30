@@ -1,0 +1,161 @@
+<div class="quoteFilters">
+    <h3>User Input Data</h3>
+    <form [formGroup]="filterForm">
+        <div class="filterBlock">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Policy For:</h4>
+                </div>
+                <div class="col-8 pad-0">
+                    <h4 class="medium">Individual</h4>
+                </div>
+                <div class="col-4">
+                    <h4>Pincode:</h4>
+                </div>
+                <div class="col-8 pad-0">
+                    <h4 class="medium">760008</h4>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Filter By <span><a href="">Rest All Filters</a></span></h3>
+        <div class="filterBlock">
+            <h5>Filter Premium</h5>
+            <ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
+
+        </div>
+        <ng-template #SumInsured>
+            <h3>Sum Insured</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>  
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="">Hide these tip</a>
+                <a href="" class="btn">Got it</a>
+            </div>
+        </ng-template>
+        <div class="filterBlock" [ngbTooltip]="SumInsured" placement="right">
+            <h5>Sum Insured</h5>
+            <ng-select
+                formControlName="SumInsured"
+                >
+                <ng-option *ngFor="let a of suminsured">
+                    {{ a.sum }}
+                </ng-option>
+            </ng-select>
+        </div>
+
+        <div class="filterBlock">
+            <ngb-accordion #acc="ngbAccordion" activeIds="plantype">
+                <ngb-panel title="Plan Type" id="plantype">
+                    <ng-template ngbPanelContent>
+                        <input
+                            type="checkbox"
+                            name="plantype"
+                            id="plantype1"
+                            />
+                        <label for="plantype1">Base Plan</label>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+
+        </div>
+
+        <div class="filterBlock">
+            <ngb-accordion #acc="ngbAccordion" activeIds="prepolicy">
+                <ngb-panel title="No Pre-Policy Medical Checkup" id="prepolicy">
+                    <ng-template ngbPanelContent>
+                        <input
+                            type="checkbox"
+                            name="plantype"
+                            id="prepolicy1"
+                            />
+                        <label for="prepolicy1">No Pre-Policy Medical Checkup</label>
+                        <input
+                            type="checkbox"
+                            name="plantype"
+                            id="prepolicy2"
+                            />
+                        <label for="prepolicy2">No Pre-Policy Medical Checkup</label>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+
+        <div class="filterBlock">
+            <ngb-accordion #acc="ngbAccordion" activeIds="roomrent">
+                <ngb-panel title="Room Rent Limit" id="roomrent">
+                    <ng-template ngbPanelContent>
+                        <input
+                            type="checkbox"
+                            name="plantype"
+                            id="roomrent1"
+                            />
+                        <label for="roomrent1">No Sub Limit</label>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+
+        <div class="filterBlock">
+            <ngb-accordion #acc="ngbAccordion" activeIds="Benefit">
+                <ngb-panel title="Plan Benefit" id="Benefit">
+                    <ng-template ngbPanelContent>
+                        <div class="form-group">
+                            <input
+                            type="checkbox"
+                            name="plantype"
+                            id="Benefit1"
+                            />
+                            <label for="Benefit1">OPD</label>
+                        </div>
+                        <div class="form-group">
+                            <input
+                            type="checkbox"
+                            name="plantype"
+                            id="Benefit2"
+                            />
+                            <label for="Benefit2">Reinstatement Benefit</label>
+                        </div>
+                        <div class="form-group">
+                            <input
+                            type="checkbox"
+                            name="plantype"
+                            id="Benefit3"
+                            />
+                            <label for="Benefit3">Maternity Expense</label>
+                        </div>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+
+        <div class="filterBlock">
+            <ngb-accordion #acc="ngbAccordion" activeIds="copay">
+                <ngb-panel title="Co-Pay" id="copay">
+                    <ng-template ngbPanelContent>
+                        <input
+                            type="checkbox"
+                            name="plantype"
+                            id="copay1"
+                            />
+                        <label for="copay1">Co-Pay</label>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+
+        <div class="filterBlock">
+            <ngb-accordion #acc="ngbAccordion" activeIds="disease">
+                <ngb-panel title="Pre-Existing Disease" id="disease">
+                    <ng-template ngbPanelContent>
+                        <input
+                            type="checkbox"
+                            name="plantype"
+                            id="disease1"
+                            />
+                        <label for="disease1">Co-Pay</label>
+                    </ng-template>
+                </ngb-panel>
+            </ngb-accordion>
+        </div>
+    </form>
+</div>

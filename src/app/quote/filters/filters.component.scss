@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables';
+.quoteFilters {
+    padding: 20px 15px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    h3 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        color: $textColor;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: $anchorColor;
+            text-align: right;
+            font-size: 0.8rem;
+        }
+    }
+    .filterBlock {
+        background-color: $whiteColor;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        h4 {
+            font-family: Gilroy-Regular;
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.6;
+            &.medium {
+                font-family: Gilroy-Medium;
+            }
+        }
+        h5 {
+            font-family: Gilroy-Medium;
+            font-size: 1rem;
+        }
+    }
+}
+.form-group{
+    margin-bottom: 0;
+}

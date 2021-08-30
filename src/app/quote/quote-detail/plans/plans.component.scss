@@ -1,0 +1,212 @@
+@import '../../../../assets/scss/variables';
+
+.plans {
+    padding: 30px;
+    .planDetail {
+        border: 2px solid $lightBg;
+        border-radius: 15px;
+        .companyLogos {
+            padding: 50px 20px;
+            height: 100%;
+            img {
+                width: 100%;
+            }
+            .morePlans {
+                height: 100%;
+                a {
+                    position: relative;
+                    color: $primaryColor;
+                    font-size: 0.9rem;
+                    text-align: center;
+                    display: block;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    height: 100%;
+                    div {
+                        text-align: center;
+                        span {
+                            display: inline-block;
+                            padding: 0px 5px 4px 5px;;
+                            // background-color: $lightBg;
+                            border-radius: 5px;
+                            img {
+                                width: 17px;
+                            }
+        
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        width: 7px;
+                        height: 0;
+                        background-color: $lightBg;
+                        display: block;
+                        position: absolute;
+                        top: 66px;
+                        left: 47%;
+                        transition: all 0.4s ease;
+                    }
+                    &.active {
+                        img {
+                            transform: rotate(180deg);
+                        }
+                        &:before {
+                            content: "";
+                            width: 7px;
+                            height: calc(100% - 200px);
+                            background-color: $lightBg;
+                            display: block;
+                            position: absolute;
+                            top: 66px;
+                            left: 47%;
+                            transition: all 0.4s ease;
+                        }
+                        &:after {
+                            content: "";
+                            background-image: url(../../../../assets/images/arrowColor.png);
+                            width: 20px;
+                            height: 10px;
+                            display: block;
+                            position: absolute;
+                            top: calc(100% - 125px);
+                            left: 43%;
+
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        .insurancePlan {
+            border-radius: 15px;
+            box-shadow: 0 0 15px $lightBg;
+            background-color: $whiteColor;
+            transform: scale(1.01, 1.01);
+            .plantop {
+                ul {
+                    display: flex;
+                    padding: 0;
+                    margin-bottom: 0;
+                    li {
+                        padding: 10px 30px;
+                        font-size: 1.1rem;
+                        &.covid {
+                            padding: 10px 15px;
+                            background-color: $lightBg;
+                            font-size: 0.9rem;
+                            border-radius: 15px 0 15px 0;
+                        }
+                    }
+                }
+            }
+            .insuranceDetail {
+                padding: 20px 30px;
+                position: relative;
+                border-radius: 0 0 15px 15px;
+                overflow: hidden;
+                .benefit {
+                    display: flex;
+                    align-items: flex-start;
+                    img {
+                        height: 25px;
+                        margin-right: 15px;
+                    }
+                    h4 {
+                        font-size: 1rem;
+                        color: $textColor;
+                    }
+                    p {
+                        font-family: Gilroy-Regular;
+                        font-size: 1rem;
+                        color: $textColor;
+                        font-weight: 300;
+                    }
+                }
+                .note {
+                    p {
+                        font-family: Gilroy-Bold;
+                        font-size: 0.8rem;
+                        color: $textColor;
+                    }
+                }
+                .price {
+                    p {
+                        font-family: Gilroy-Bold;
+                        font-size: 0.9rem;
+                        color: $textColor;
+                        text-align: right;
+                    }
+                }
+                .insuranceFooter {
+                    border-top: 1px solid $lightBg;
+                    padding-top: 10px;
+                    a {
+                        &.detailBtn {
+                            border: 1px solid $lightBg;
+                            font-size: 1rem;
+                            color: #5F5F5F;
+                        }
+                    }
+                    .compareBtn {
+                        display: inline-block;
+                        margin-left: 10px;
+                        input[type=checkbox] {
+                            + label{
+                                padding: 8px 15px;
+                                border: 1px solid $lightBg;
+                                border-radius: 8px;
+                                &:after {
+                                    left: 19px;
+                                    top: 18px;
+                                }
+                            }
+                        
+                            
+                            &:checked {
+                                + label {
+                                    border-color: $primaryColor;
+                                }
+                            }
+                        }
+                    }
+                    .netPrice {
+                        p {
+                            font-size: 0.8rem;
+                            text-align: center;
+                            margin-bottom: 0;
+                        }
+                        h2 {
+                            font-family: Gilroy-Bold;
+                            padding: 10px 25px;
+                            background-color: $primaryColor;
+                            border-radius: 10px;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 1.5rem;
+                            margin: 0;
+                            img {
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                .insuranceDetail {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 4px;
+                        height: 100%;
+                        background-color: $primaryColor;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,433 @@
+<div class="plans">
+    <div class="planDetail">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="companyLogos">
+                    <img src="../../../../assets/images/companyLogo1.png" alt="" />
+                    <div class="morePlans">
+                        <a [ngClass]="showMyContainer ? 'active' : ''" (click)="showMyContainerpop()">
+                            16 More similar Plans
+                            <div>
+                                <span class="downarrow">
+                                    <img src="../../../../assets/images/arrowColor.png" alt="" />
+                                </span>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="insurancePlan active">
+                    <div class="plantop">
+                        <ul>
+                            <li class="covid">COVID-19 Covered</li>
+                            <li>Family (Medicare)</li>
+                        </ul>
+                    </div>
+                    <div class="insuranceDetail">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="benefit">
+                                    <img src="../../../../assets/images/Home.png" alt="home" />
+                                    <div>
+                                        <h4>Room Rent</h4>
+                                        <p>up to 1% of SI/Day</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefit">
+                                    <img src="../../../../assets/images/Wallet.png" alt="home" />
+                                    <div>
+                                        <h4>Co-Payment</h4>
+                                        <p>No Co-Pay</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefit">
+                                    <img src="../../../../assets/images/Chart.png" alt="home" />
+                                    <div>
+                                        <h4>Limit on Treatment</h4>
+                                        <p>No Limit</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefit">
+                                    <img src="../../../../assets/images/circle_left.png" alt="home" />
+                                    <div>
+                                        <h4>Reinstate Benefit</h4>
+                                        <p> 100% of original SI</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefit">
+                                    <img src="../../../../assets/images/Scan_alt_2.png" alt="home" />
+                                    <div>
+                                        <h4>Medical checkup</h4>
+                                        <p>Yes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefit">
+                                    <img src="../../../../assets/images/ChartPlus.png" alt="home" />
+                                    <div>
+                                        <h4>Hospital Network</h4>
+                                        <p>6000+</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="note">
+                                    <p>USP : Restoration benefit,Organ donor expense, AYUSH upto Sum Insured,No Sublimits, Convalescence</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 justify-content-end">
+                                <div class="price">
+                                    <p>Cover : <span><img src="../../../../assets/images/rs.png" alt="" height="11" /></span>   1 Lakh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="insuranceFooter">
+                            <div class="row  d-flex align-items-center">
+                                <div class="col-sm-8">
+                                    <a class="btn btn-default detailBtn" (click)="openModallg(seeDetail)">See Details</a>
+                                    <div class="compareBtn">
+                                        <input
+                                            type="checkbox"
+                                            name="plantype"
+                                            id="compareProduct"
+                                            />
+                                        <label for="compareProduct">Compare Product</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex justify-content-end">
+                                    <div class="netPrice ">
+                                        <p>Includes GST</p>
+                                        <h2>
+                                            <img src="../../../../assets/images/rs-white.png" alt="" />
+                                            1,556
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="" *ngIf="showMyContainer">
+                    <div class="insurancePlan mt-5">
+                        <div class="plantop">
+                            <ul>
+                                <li class="covid">COVID-19 Covered</li>
+                                <li>Family (Medicare)</li>
+                            </ul>
+                        </div>
+                        <div class="insuranceDetail">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="benefit">
+                                        <img src="../../../../assets/images/Home.png" alt="home" />
+                                        <div>
+                                            <h4>Room Rent</h4>
+                                            <p>up to 1% of SI/Day</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="benefit">
+                                        <img src="../../../../assets/images/Wallet.png" alt="home" />
+                                        <div>
+                                            <h4>Co-Payment</h4>
+                                            <p>No Co-Pay</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="benefit">
+                                        <img src="../../../../assets/images/Chart.png" alt="home" />
+                                        <div>
+                                            <h4>Limit on Treatment</h4>
+                                            <p>No Limit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="benefit">
+                                        <img src="../../../../assets/images/circle_left.png" alt="home" />
+                                        <div>
+                                            <h4>Reinstate Benefit</h4>
+                                            <p> 100% of original SI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="benefit">
+                                        <img src="../../../../assets/images/Scan_alt_2.png" alt="home" />
+                                        <div>
+                                            <h4>Medical checkup</h4>
+                                            <p>Yes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="benefit">
+                                        <img src="../../../../assets/images/ChartPlus.png" alt="home" />
+                                        <div>
+                                            <h4>Hospital Network</h4>
+                                            <p>6000+</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="note">
+                                        <p>USP : Restoration benefit,Organ donor expense, AYUSH upto Sum Insured,No Sublimits, Convalescence</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 justify-content-end">
+                                    <div class="price">
+                                        <p>Cover : <span><img src="../../../../assets/images/rs.png" alt="" height="11" /></span>   1 Lakh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insuranceFooter">
+                                <div class="row  d-flex align-items-center">
+                                    <div class="col-sm-8">
+                                        <a href="" class="btn btn-default detailBtn">See Details</a>
+                                        <div class="compareBtn">
+                                            <input
+                                                type="checkbox"
+                                                name="plantype"
+                                                id="compareProduct"
+                                                />
+                                            <label for="compareProduct">Compare Product</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 d-flex justify-content-end">
+                                        <div class="netPrice ">
+                                            <p>Includes GST</p>
+                                            <h2>
+                                                <img src="../../../../assets/images/rs-white.png" alt="" />
+                                                1,556
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #seeDetail let-modal>
+    <div class="seeDetailPage">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-2">
+                    <a class="backBtn"  (click)="modal.dismiss('Cross click')">
+                        <span><img src="../../assets/images/leftarrow.png" style="width: 8px;" /></span>
+                        Back to Results
+                    </a>
+                    <div class="leftDetail">
+                        <div class="logoImg">
+                            <img src="../../assets/images/companyLogo1.png" class="logo" alt="" style="height: 40px;">
+                        </div>
+                        <h3>Family (Medicare)</h3>
+                        <h2>
+                            Cover : 
+                            <img src="../../../../assets/images/whiters.png" alt="" style="height: 13px;"> 
+                            1 Lakh
+                        </h2>
+                        <h1>
+                            <img src="../../../../assets/images/rs-white.png" alt=""> 
+                            1,556 
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="detailSection">
+                        <tabset #tabset>
+                            <tab heading="Product Features">
+                                <div class="detailData">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h3>Basic Features</h3>
+                                            <div class="dataInner">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Inpatient Treatment</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Covered - Upto Sum Insured </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Pre Hospitalisation</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>30 Days</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Post Hospitalisation</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>60 Days</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Day Care Treatment</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Free Medical Check Up</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Annually</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Ambulance Charge</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Max Rs. 1000/- per hospitalisation</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Cumulative Bonus</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not Available</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>AYUSH Treatment</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <h3>Special Features</h3>
+                                            <div class="dataInner">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Daily Cash Allowance</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Rs.750 per day; Max 7days per
+                                                            hospitalization covered after 3 days</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Air Ambulance</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>OPD Expenses</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Maternity Expenses</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>New Born Baby Cover</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Organ Donor Expenses</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Reinstatement / Restore</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>100% of original SI upon
+                                                            exhaustion of SI</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Critical Illness Rider</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Not covered</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <p>Companion Benefit</p>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h4>Rs.10,000 if hospitalization
+                                                            exceeds 10 days</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </tab>
+                        
+                            <tab heading="Additional Features">
+                                Tab 2 content
+                            </tab>
+                            <tab heading="Product Limitations">
+                                Tab 3 content
+                            </tab>
+                        
+                            <tab heading="Waiting Periods">
+                                Tab 4 content
+                            </tab>
+                            
+                        </tabset>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</ng-template>

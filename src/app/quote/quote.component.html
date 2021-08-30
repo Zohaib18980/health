@@ -1,0 +1,350 @@
+<app-header></app-header>
+<div class="container">
+    <div class="quoteheader">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <h2>Compare Health Insurance</h2>
+            </div>
+            <div class="col-md-7 justify-content-center">
+                <div class="top-flip">
+                    <span class="count">1</span>
+                    <p>Plan(s) Selected</p>
+                    <div class="topQuote">
+                        <a href="" class="btn btn-default">
+                            <span><img src="../../../assets/images/File_dock.png" alt="" style="height:18px;" /></span>
+                            Pdf
+                        </a>
+                        <a class="btn btn-default" (click)="openModal(sendEmail)">
+                            <span><img src="../../../assets/images/Message.png" alt="" style="height:18px;" /></span>
+                            Email
+                        </a>
+                        <a class="btn btn-primary" (click)="openModallg(compare)">
+                            Compare
+                        </a>
+                    </div>
+                    <span class="cross"></span>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="quoteContent">
+        <div class="row">
+            <div class="col-md-3">
+                <app-filters></app-filters>
+            </div>
+            <div class="col-md-7">
+                <app-quote-detail></app-quote-detail>
+            </div>
+            <div class="col-md-2">
+                <app-nointernet></app-nointernet>
+            </div>
+        </div>
+        <div class="quoteNote">
+            <app-quote-note></app-quote-note>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+<ng-template #sendEmail let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title"> Send Email</h4>
+        <button type="button" class="close modal-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-section">
+            <form class="emailBlock">
+                <div class="form-group mb-3">
+                    <div class="row align-items-center ">
+                        <div class="col-sm-3">
+                            <label>Your Name</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-input">
+                                <input type="text" class="form-control" placeholder="Full Name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label>Send Email To</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-input">
+                                <input type="text" class="form-control" placeholder="Email Address" />
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-2">
+                    <div class="form-btn d-flex justify-content-center">
+                        <button type="button" class="btn btn-default" (click)="modal.dismiss('Cross click')">Close</button>
+                        <button type="submit" class="btn btn-primary">Send Quote</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #compare let-modal>
+    <div class="comparePage">
+        
+        <div class="modal-body">
+            <div class="packageTop">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="backBtn"  (click)="modal.dismiss('Cross click')">
+                            <span><img src="../../assets/images/leftarrow.png" style="width: 8px;" /></span>
+                            Back to Results
+                        </a>
+                        <div class="mainBtns">
+                            <a href="" class="btn btn-default">
+                                <span ><img src="../../../assets/images/File_dock.png" alt="" style="height: 18px;"></span>
+                                Download
+                            </a>
+                            <a href="" class="btn btn-default">
+                                <span ><img src="../../../assets/images/Message.png" alt="" style="height: 18px;"></span>
+                                Email
+                            </a>
+                        </div>
+                        <div class="addBtns">
+                            <a href="" class="btn btn-primary">
+                                <span>+</span> Add Plan
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packageBlock">
+                            <div class="packageMain d-flex justify-content-between">
+                                <img src="../../assets/images/companyLogo1.png" alt="" style="height: 40px;" />
+                                <h2><img src="../../../../assets/images/whiters.png" alt=""> 1,556 </h2>
+                            </div>
+                            <div class="packagePrice d-flex justify-content-between">
+                                <h3>Family (Medicare)</h3>
+                                <h2>Cover : <img src="../../../../assets/images/whiters.png" alt="" style="height: 13px;">  1 Lakh</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-5">
+                        <div class="packageBlock">
+                            <div class="packageMain d-flex justify-content-between">
+                                <img src="../../assets/images/companyLogo2.png" alt="" style="height: 40px;" />
+                                <h2><img src="../../../../assets/images/whiters.png" alt=""> 1,759 </h2>
+                            </div>
+                            <div class="packagePrice d-flex justify-content-between">
+                                <h3>ProHealth-Protect</h3>
+                                <h2>Cover : <img src="../../../../assets/images/whiters.png" alt="" style="height: 13px;">  1 Lakh</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="packageBody">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="packName d-flex">
+                            <div class="packtag empty"></div>
+                            <p>Product Premium</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p>18,091</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p>18,091</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packageBody">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="packName d-flex">
+                            <div>
+                                <div class="packtag radius">
+                                    <span>USP</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Unique Feature</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p>Life-long renewability, Get Automatic recharge of sum insured if claim amount exhausts your coverage, at no extra cost, Companion Benefit of Rs. 10,000</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p>Life-long renewability, Get Automatic recharge of sum insured if claim amount exhausts your coverage, at no extra cost, Companion Benefit of Rs. 10,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="packageBody">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="packName d-flex">
+                            <div>
+                                <div class="packtag">
+                                    <span class="radius">BASIC BENEFITS</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Inpatient Treatment</p>
+                                <p>Pre Hospitalisation</p>
+                                <p>Post Hospitalisation</p>
+                                <p>Day Care Treatment</p>
+                                <p>Free Medical Check Up</p>
+                                <p>Ambulance Charge</p>
+                                <p>Cumulative Bonus</p>
+                                <p>AYUSH Treatment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p> Covered - Upto Sum Insured </p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> 30 Days</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> 60 Days</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Annually</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Max Rs. 1000/- per hospitalisation</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not Available </p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Not covered</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p> Covered - Upto Sum Insured </p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> 30 Days</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> 60 Days</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Annually</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Max Rs. 1000/- per hospitalisation</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not Available </p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p> Not covered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="packageBody">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="packName d-flex">
+                            <div>
+                                <div class="packtag radius">
+                                    <span>SPECIAL BENEFITS</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Daily Cash Allowance <br/></p>
+                                <p>Air Ambulance</p>
+                                <p>OPD Expenses</p>
+                                <p>Maternity Expenses</p>
+                                <p>New Born Baby Cover</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p>Rs.750 per day; Max 7days per
+                                hospitalization covered after 3 days</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="packSpec d-flex">
+                            <p>Rs.750 per day; Max 7days per
+                                hospitalization covered after 3 days</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="packSpec d-flex">
+                            <p>Not covered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="packageBody">
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-5">
+                        <div class="buyBlock">
+                            <a href="" class="btn buy">Buy This Plan</a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="buyBlock">
+                            <a href="" class="btn buy">Buy This Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</ng-template>
+

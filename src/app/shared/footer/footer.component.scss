@@ -1,0 +1,36 @@
+
+@import '../../../assets/scss/variables';
+.mainfooter {
+    background-color: $lightBg;
+    padding: 20px 0;
+    p {
+        margin: 0;
+        font-size: 1rem;
+        color: $textColor;
+        span {
+            font-family: Gilroy-Bold;
+        }
+        @media screen and (max-width: 991px) {
+            &.align-center {
+                text-align: left;
+            }
+            &.align-right {
+                text-align: left;
+            }
+        }
+    }
+}
+.footerinner {
+    background-color: #ccc;
+    padding: 10px 0;
+    p {
+        margin: 0;
+        font-size: 0.8rem;
+        color: $textColor;
+        @media screen and (max-width: 991px) {
+            &.align-right {
+                text-align: left;
+            }
+        }
+    }
+}
