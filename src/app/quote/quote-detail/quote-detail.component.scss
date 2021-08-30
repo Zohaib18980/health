@@ -8,9 +8,16 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 30px;
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
         .filtertags {
             .filtertag {
                 margin-right: 10px;
+                @media only screen and (max-width: 768px) {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
                 .taginner {
                     padding: 8px;
                     border-radius: 5px;
@@ -26,6 +33,9 @@
             }
         }
         .reset {
+            @media only screen and (max-width: 768px) {
+                margin-top: 10px;
+            }
             a {
                 cursor: pointer;
                 font-size: 1rem;
@@ -39,11 +49,18 @@
         align-items: center;
         padding: 10px 30px;
         background-color: $lightBg;
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
         .pagelength {
             display: flex;
             font-size: 1rem;
             color: $textColor;
             align-items: center;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
             ng-select {
                 margin: 0 10px;
             }
@@ -53,6 +70,10 @@
             font-size: 1rem;
             color: $textColor;
             align-items: center;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                margin-top: 10px;
+            }
             ng-select {
                 margin-left: 10px;
             }

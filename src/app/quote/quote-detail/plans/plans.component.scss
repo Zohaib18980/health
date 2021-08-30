@@ -2,9 +2,15 @@
 
 .plans {
     padding: 30px;
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+    }
     .planDetail {
         border: 2px solid $lightBg;
         border-radius: 15px;
+        @media only screen and (max-width: 768px) {
+            border: 0;
+        }
         .companyLogos {
             padding: 50px 20px;
             height: 100%;
@@ -70,7 +76,10 @@
                             position: absolute;
                             top: calc(100% - 125px);
                             left: 43%;
-
+                            
+                            @media only screen and (max-width: 768px) {
+                                display: none;
+                            }
                         }
                     }
                     

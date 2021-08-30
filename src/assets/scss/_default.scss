@@ -259,13 +259,16 @@ ngb-tooltip-window {
     background-color: rgb(14,53,51) !important;
     opacity: 0.5 !important;
 }
-
+.modal-open .modal {
+    overflow-x: auto;
+}
 .modal {
     &.show {
       .modal-dialog {
         max-width: 650px;
         &.modal-lg {
           max-width: 1500px;
+          min-width: 1500px;
           overflow: auto;
         }
         .modal-content {
@@ -601,5 +604,13 @@ ngb-tooltip-window {
             }
         }
         
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        &.fixed-top {
+            position: relative;
+        }
     }
 }

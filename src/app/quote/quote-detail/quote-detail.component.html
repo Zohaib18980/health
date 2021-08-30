@@ -2,13 +2,13 @@
     <div class="filterselected">
         <div class="filtertags" *ngIf="isShown">
             <span class="filtertag" *ngFor="let f of FilterName; let i = index">
-                <span class="taginner" *ngIf="tagShow==i">
+                <span class="taginner">
                     {{ f.filtername }}
                     <img src="../../../assets/images/crosslight.png" alt="" width="11" (click)="tagClose(i)" />
                 </span>
             </span>
         </div>
-        <div class="reset">
+        <div class="reset" [disabled]="isShown">
             <a (click)="tagsReset()">Rest All Filters</a>
         </div>
     </div>
